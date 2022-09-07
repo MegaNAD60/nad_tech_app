@@ -1,0 +1,185 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/carousel/">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+	<script src="script.js"></script>
+    <title>NAD TECH</title>
+
+ </head>
+
+<body id="pricing">
+	<button onclick="topFunction()" id="back-to-top"><i>Top</i></button>
+
+  <nav class="navbar navbar-expand-md .bg-* navbar-custom fixed-top" id="navbar">
+    <li class="navbar-brand">NAD Tech</li>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="bars-icon"><i class="fas fa-bars"></i></span>
+    <span class="close-icon py-1"><i class="fas fa-times"></i></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'blog' %}">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <div id="pricing">
+    <center><h2>Pricing</h2></center>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div id="pricing-box-1">
+          <h3>Personal Website</h3>
+          <h3><b>N30,000</b></h3>
+          <p>Responsive</p>
+          <p>Social Media links</p>
+          <p>About content</p>
+          <p>Personal photo gallery</p>
+          <p>Personal documantations</p>
+          <p>Contact Information</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div id="pricing-box-2">
+          <h3>Portfolio Website</h3>
+          <h3><b>N50,000</b></h3>
+          <p>Responsive</p>
+          <p>Social Media links</p>
+          <p>Email support</p>
+          <p>About content</p>
+          <p>Portfolio content</p>
+          <p>Contact information</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div id="pricing-box-3">
+          <h3>Business Website</h3>
+          <h3><b>N70,000</b></h3>
+          <p>Responsive</p>
+          <p>Social Media links</p>
+          <p>Email support</p>
+          <p>About content</p>
+          <p>Product and services gallery</p>
+          <p>Contact information</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div id="pricing-box-4">
+          <h3>Newspaper/Blog website</h3>
+          <h3><b>N90,000</b></h3>
+          <p>Responsive</p>
+          <p>Social Media links</p>
+          <p>Email support</p>
+          <p>About content</p>
+          <p>Article/Blog page</p>
+          <p>Comment section</p>
+          <p>Registration site</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div id="pricing-box-5">
+          <h3>Educational website</h3>
+          <h3><b>N100,000</b></h3>
+          <p>Responsive</p>
+          <p>Social Media links</p>
+          <p>Email support</p>
+          <p>About content</p>
+          <p>Registration site</p>
+          <p>Payment support app</p>
+          <p>Help center access</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div id="pricing-box-6">
+          <h3>E-commerce website</h3>
+          <h3><b>N350,000</b></h3>
+          <p>Responsive</p>
+          <p>Social Media links</p>
+          <p>Email support</p>
+          <p>Registration site</p>
+          <p>Product and services gallery</p>
+          <p>Online shopping cart</p>
+          <p>Payment support App</p>
+          <p>Help center access</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="graphic-pricing-box">
+      <center><h3>Graphic Art works</h3></center>
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Fliers:</h3>
+          <p>Prices: N2,000</p>
+        </div>
+        <div class="col-md-4">
+          <h3>Logos:</h3>
+          <p>Prices: N10,000</p>
+        </div>
+        <div class="col-md-4">
+          <h3>Photo Editing:</h3>
+          <p>Prices: N1,000</p>
+        </div>
+      </div>
+    </div>
+
+    <p id="pls-note-p">Please Do Note That All Prices Are Slightly Negociateable. For more Inquiries, Do contact us via phone call or connect
+       with us through our social media handle.</p>
+  </div>
+
+
+</div>
+
+<div class="footer">
+	<div id="footer-contact">
+    <center>
+      <h4><b>Connect with us via</b></h4>
+      <div class="header-social-links">
+        <i><a href="https://www.facebook.com/equity.justice.501" class="fab fa-facebook"></a></i>   
+        <a href="https://www.instagram.com/nehemiahagbu" class="fab fa-instagram"></a>   
+        <a href="https://wa.me/+2348123595348" class="fab fa-whatsapp"></a>   
+        <a href="https://twitter.com/dauda_nehemiah" class="fab fa-twitter"></a>   
+        <a href="https://t.me/NehemiahD" class="fab fa-telegram"></a>   
+      </div>
+    </center>
+  </div>
+</div>
+<div id="copyright">
+	<center>
+		<span>copywright &copy <strong>nad tech 2022</strong></span><br/>
+		<span>Design by <strong>Nehemiah Dauda</strong></span>
+	</center>
+</div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <script>
+    $(window).scroll(function(){
+      $('.navbar').toggleClass('scrolled', $(this).scrollTop() > 200);
+      $('.nav-link').toggleClass('scrolled', $(this).scrollTop() > 200);
+      $('#back-to-top').toggleClass('scrolled', $(this).scrollTop() > 200);
+      });
+    </script>
+</body>
+</html>

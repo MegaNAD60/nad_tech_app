@@ -1,0 +1,421 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/carousel/">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+	<script src="script.js"></script>
+    <title>NAD TECH</title>
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        height:100%;
+        width:100%;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+
+</head>
+
+<body>
+	<button onclick="topFunction()" id="back-to-top"><i>Top</i></button>
+
+<nav class="navbar navbar-expand-md .bg-* navbar-custom fixed-top" id="navbar">
+  <li class="navbar-brand">NAD Tech</li>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="bars-icon"><i class="fas fa-bars"></i></span>
+    <span class="close-icon py-1"><i class="fas fa-times"></i></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#services">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#portfolio">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'blog' %}">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'pricing' %}">Pricing</a>
+      </li>
+		<li class="nav-item">
+			<a class="nav-link" href="#contact">Contact</a>
+		</li>
+    </ul>
+  </div>
+</nav>
+
+
+  <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="bd-placeholder-img"  style="background-image:linear-gradient(rgba(0,0,0,0.527),rgba(0,0,0,0.5)),url('static/images/portfolio-1.jpg')" role="img" aria-label=" :  " preserveAspectRatio="xMidYMid slice" focusable="false"><title> </title><rect width="100%" height="100%"/><text x="50%" y="50%" fill="#777" dy=".3em"> </text></img>
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Welcome To NAD Tech.</h1>
+            <p>We create, build and design digital tools and content to help grow your business and boost your career.</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="bd-placeholder-img" style="background-image:linear-gradient(rgba(0,0,0,0.527),rgba(0,0,0,0.5)),url('static/images/portfolio-2.jpg')" role="img" aria-label=" :  " preserveAspectRatio="xMidYMid slice" focusable="false"><title> </title><rect width="100%" height="100%"/><text x="50%" y="50%" fill="#777" dy=".3em"> </text></img>
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Smile as You Win.</h1>
+            <p>Put smiles in your career and business and promotes what you stand for.</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="bd-placeholder-img" style="background-image:linear-gradient(rgba(0,0,0,0.527),rgba(0,0,0,0.5)),url('static/images/portfolio-3.jpg');" role="img" aria-label=" :  " preserveAspectRatio="xMidYMid slice" focusable="false"><title> </title><rect width="100%" height="100%"/><text x="50%" y="50%" fill="#777" dy=".3em"> </text></img>
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Keep current for owns benefit.</h1>
+            <p>Don't relent in getting updated to the fast and diverse changing world for owns benefit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-target="#myCarousel" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-target="#myCarousel" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </button>
+  </div>
+
+  <div class="line-div"></div>
+
+  <div class="container">
+  
+    <div id="about">
+      <h2>ABOUT US</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="{% static 'images/portfolio-11.jpg' %}" id="about-img">
+        </div>
+        <div class="col-md-6">
+          <h3 id="about-h3-1"><b>About NAD Tech</b></h3>
+					<p>NAD Tech is a top-rated freelance online set-up. We offer digital services to our customers,
+            with focuses on Website development, Graphic designs, UI/UX designs, Online tutoring and lots more.
+            With years of experience, we provide enably environment for people to explore the benefits and opportunities
+            that today's digital world have to offer. We deal in variety of digital content which includes: 
+          </p>
+					<li><i class="fas fa-check-double"></i>Website development including Personal website, Portfolio website, Business
+          website, Educational website, E-commerce website, Blogs and lots more.</li><br>
+					<li><i class="fas fa-check-double"></i>Graphic designs for Fliers, Posters, Banners, Business cards,stickers, etc, 
+            which could be use for advertisment, illustration, social media purpose amongst other.</li><br>
+					<li><i class="fas fa-check-double"></i>Logos for brands, companies, businesses amongst other</li><br>
+					<li><i class="fas fa-check-double"></i>Tech tutorials and materials for interested individuals in the field of 
+            Technology specifically where we are focused in.</li><br>
+					<p>In today's digital world, our content delivery will in great way spread your ideas and
+             thoughts, boost your business and promotes your brands as well as generate wealth for your course.
+          </p>
+        </div>
+      </div>
+      <div class="row" id="about-second-row">
+        <div class="col-md-4">
+          <div class="main">
+            <img src="{% static 'images/portfolio-1.jpg' %}" id="about-mission-img" />
+            <div class="overlay">
+              <center><img src="{% static 'images/c-mission-icon.jpg' %}" id="about-icons"></img></center>
+            </div>
+          </div>
+          <center><h3 id="about-h3">Our Mission</h3></center>
+          <p>In a fast growing world of digital advancement, our mission is to provide such digital advancement
+            to customers and potential customers. This is to enable them, spread their ideas and thought promote
+            their portfolios and grow their business and lots more through the use of digital tools.</p>
+        </div>
+        <div class="col-md-4">
+          <div class="main">
+            <img src="{% static 'images/portfolio-2.jpg' %}" id="about-mission-img">
+            <div class="overlay">
+              <center><img src="{% static 'images/plan-icon.jpg' %}" id="about-icons"></img></center>
+            </div>
+          </div>
+          <center><h3 id="about-h3">Our Plan</h3></center>
+          <p>Our plan is to provide digital tools and content to spread ideas, promotes portfolios, grow businesses, and 
+            create moments of satisfaction to our customers and potential customers.</p>
+        </div>
+        <div class="col-md-4">
+          <div class="main">
+            <img src="{% static 'images/portfolio-3.jpg' %}" id="about-mission-img">
+            <div class="overlay">
+              <center><img src="{% static 'images/vision-icon.jpg' %}" id="about-icons"></img></center>
+            </div>
+          </div>
+          <center><h3 id="about-h3">Our vision</h3></center>
+          <p>Our core vision is to grow and promotes business and careers around the world, through the use of digital tools.
+            We envisage in growing and promoting hundreds of businesses and careers every year through the use of digital 
+            tools and content </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="services">
+      <h2>SERVICES</h2>
+      <h3>CHECK OUR SERVICES</h3>
+      <div class="row">
+        <div class="col-md-6">
+          <div id="services-box">
+            <h3><b>Websites Development</b></h3>
+            <p>NAD Tech, an online set-up, majorly creates web-sites which includes Personal website, Portfolio websites, Business website 
+              E-commerce websites, School websites, Blogs, Online Newspaper websites and lots more.
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div id="services-box">
+            <h3><b>Graphic Designs</b></h3>
+            <p>NAD Tech deals in creative and beautiful graphic works using modern graphic tools. We designs Fliers, Posters, Banners, Business cards,
+               Photo editing, and lots more, which could be for personal use, illustrations, social media content or any other purposes.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-6">
+          <div id="services-box">
+            <h3><b>Web Hosting/Management</b></h3>
+            <p>NAD Tech deals also in hosting of websites as well as manages the web-site of customers and potential customers.
+              At NAD Tech, we also updates and upgrade websites already being hosted.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div id="services-box">
+            <h3><b>Online Tutorials</b></h3>
+            <p>Through our bloging channels, and social media handles, we provide tutorials and materials for interested individuals in the field for web development, graphic designs, ui/ux designs and lots more.
+              Also, interested individuals in Abuja can contact us for a pysical tutorials.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="portfolio">
+      <h2>PORTFOLIO</h2>
+      <h3>CHECK OUR PORTFOLIOS</h3>
+
+      <div class="row">
+        <div class="col-md-3">
+          <div id="portfolio-box">
+            <img src="{% static 'images/portfolio-site-gallery.jpg' %}" id="portfolio-img"/>
+            <h6>An individual portfolio website example<br/><a href="https://meganad60.github.io"><i class="fas fa-link"></i></a></h6>
+             
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div id="portfolio-box">
+            <img src="{% static 'images/clothing-site-gallery.jpg' %}" id="portfolio-img"/>
+            <h6>Clothing store business website template<br/><a href="https://nadclothings.netlify.app"><i class="fas fa-link"></i></a></h6>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div id="portfolio-box">
+            <img src="{% static 'images/marketing-site-gallery.jpg' %}" id="portfolio-img"/>
+            <h6>A business site template<br/><a href="#"><i class="fas fa-link"></i></a></h6>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div id="portfolio-box">
+            <img src="{% static 'images/housing-site-gallery.jpg' %}" id="portfolio-img"/>
+            <h6>A real estate web site template<br/><a href="https://nadrealestate.netlify.app"><i class="fas fa-link"></i></a></h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3">
+          <div id="portfolio-box">
+            <img src="{% static 'images/realestate-advert.jpg' %}" id="portfolio-img"/>
+            <h6>A real estate advert design by us<br/><i class="fas fa-plus"></i></h6>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div id="portfolio-box">
+            <img src="{% static 'images/peargarden2.jpg' %}" id="portfolio-img"/>
+            <h6>A real estate advert flier<br/><i class="fas fa-plus"></i></h6>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div id="portfolio-box">
+            <img src="{% static 'images/nad-website-flier.jpg' %}" id="portfolio-img"/>
+            <h6>Here is one of our advert flier<br/><i class="fas fa-plus"></i></h6>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div id="portfolio-box">
+            <img src="{% static 'images/hangout.jpg' %}" id="portfolio-img"/>
+            <h6>A flier for an hangout design by us.<br/><i class="fas fa-plus"></i></h6>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="row">
+        <div class="col-md-3">
+          <div id="portfolio-box">
+            <img src="{% static 'images/sticker.jpg' %}" id="portfolio-img"/>
+            <h6>A simple sticker design<br/><i class="fas fa-plus"></i></h6>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div id="portfolio-box">
+            <img src="{% static 'images/tech-firm-advert.jpg' %}" id="portfolio-img"/>
+            <h6>A tech firm advert flier<br/><i class="fas fa-plus"></i></h6>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div id="portfolio-box">
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div id="portfolio-box">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="contact">
+      <h2>CONTACT US</h2>
+      <div class="row">
+
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-12">
+              <div id="address-box">
+                <i class="fas fa-map-marker-alt"></i>   
+                <h4>Address</h4>
+                <p>Abuja, Nigeria</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div id="email-box">
+							  <div class="info-box mt-4">
+								  <i class="fas fa-envelope"></i>   
+								  <h4>Email</h4>
+								  <p>nehemiahdauda60@gmail.com<br/>daudaagbu@gmail.com</p>
+							  </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div id="phone-box">
+                <div class="info-box mt-4">
+                  <i class="fas fa-phone"></i>   
+                  <h4>Call</h4>
+                  <p>+234 8123 5953 48<br>+234 8135 3073 09</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6">
+          <div id="message-box">
+            <form method="" name="myform">
+              <center><h3>SEND A MESSAGE</h3></center>
+              <fieldset id="message-box-fieldset">
+                <div id="input-box">
+                  <input type="text" name="name" id="message-box-name" placeholder="Full Name" minlength="3" class="text-input" required/>
+                </div>
+                <div id="input-box">
+                  <input type="email" name="email" id="message-box-email" placeholder="E-mail" class="email-input" required />
+                </div>
+                <div id="input-box">
+                  <input type="text" name="phone" id="message-box-subject" placeholder="Subject" class="phone-no-input" required />
+                </div>
+                <div id="input-box">
+                  <textarea type="text" name="text" id="message-box-textarea" placeholder="Your Message" minlength="10" required ></textarea>
+                </div>
+                <button type="submit" name="button" id="message-box-button" onclick="sendmessage()">Send</button>
+              </fieldset>
+            </form>
+         </div>
+       </div>
+
+       <h1>Contact Us</h1><br/>
+       <form method="post" action="sendemail/success/">
+          {% csrf_token %}
+          {{ form.as_p }}
+          <div class="form-actions">
+            <button type="submit">Send</button>
+          </div>
+       </form>
+
+     </div>
+    </div>
+
+
+</div>
+
+
+<div class="footer">
+	<div id="footer-contact">
+    <center>
+      <h5><b>Connect with us via</b></h5>
+      <div class="header-social-links">
+        <a href="https://www.facebook.com/equity.justice.501" class="fab fa-facebook"></a>   
+        <a href="https://www.instagram.com/nehemiahagbu" class="fab fa-instagram"></a>   
+        <a href="https://wa.me/+2348123595348" class="fab fa-whatsapp"></a>   
+        <a href="https://twitter.com/dauda_nehemiah" class="fab fa-twitter"></a>   
+        <a href="https://t.me/NehemiahD" class="fab fa-telegram"></a>   
+      </div>
+    </center>
+  </div>
+</div>
+<div id="copyright">
+	<center>
+		<span>copywright &copy <strong>nad tech 2022.</strong> All Rights Reserved.</span><br/>
+		<span>Design by <strong>Nehemiah Dauda</strong></span>
+	</center>
+</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <script>
+    $(window).scroll(function(){
+      $('.navbar').toggleClass('scrolled', $(this).scrollTop() > 200);
+      $('.nav-link').toggleClass('scrolled', $(this).scrollTop() > 200);
+      $('.navbar-brand').toggleClass('scrolled', $(this).scrollTop() > 200);
+      $('#back-to-top').toggleClass('scrolled', $(this).scrollTop() > 200);
+      });
+      $('.nav-link').on('click', function(){
+        $('.navbar-collapse').collapse('toggle');
+      });
+     </script> 
+
+</body>
+</html>

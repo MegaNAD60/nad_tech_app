@@ -1,0 +1,676 @@
+/*----------------------------------------*/
+/*----------navigation bar styling----------*/
+/*----------------------------------------*/
+.navbar-brand{
+	font-weight:700;
+	font-size:1.5rem;
+	color:white;
+}
+.navbar{
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+.navbar-custom{
+	color:white;
+	background-color:transparent;
+}
+.navbar li{
+	margin:0px 10px;
+	font-size: 20px;
+}
+.nav-link{
+	color: white;
+}
+.nav-link:hover{
+	color:white;
+	text-decoration:underline;
+	text-decoration-color: rgb(26, 158, 158);
+}
+#pricing .navbar-brand{
+	color: rgb(26, 158, 158);
+}
+#pricing .nav-link{
+	color: rgb(43, 42, 42);
+}
+.navbar-custom.scrolled{
+	background-color:white !important;
+	box-shadow: 5px 5px 7px #696969,
+				-5px -5px 7px #ffffff;
+}
+.nav-link.scrolled{
+	color:rgb(43, 42, 42);
+}
+.navbar-brand.scrolled{
+	color: rgb(26, 158, 158);
+}
+.navbar-toggler.collapsed.close-icon{
+	display:none;
+}
+.navbar button[aria-expanded="true"] > .close-icon{
+	display: inline;
+}
+.navbar button[aria-expanded="true"] > .bars-icon{
+	display: none;
+}
+.navbar button[aria-expanded="false"] > .close-icon{
+	display: none;
+}
+
+.navbar-toggler:not(.collapse) .fa-bars{
+	display:inline;
+}
+/*----------------------------------------*/
+/*----------back to top button----------*/
+/*----------------------------------------*/
+#back-to-top{
+	position:fixed;
+	bottom:15px;
+	right:30px;
+	z-index:99;
+	border:none;
+	cursor:pointer;
+	padding:5px;
+	font-size:18px;
+	font-weight:300;
+	border-radius:10px;
+	color: transparent !important;
+	background-color:transparent;
+}
+#back-to-top.scrolled{
+	position:fixed;
+	bottom:15px;
+	right:30px;
+	z-index:99;
+	border:none;
+	cursor:pointer;
+	padding:5px;
+	color:white;
+	font-size:18px;
+	font-weight:300;
+	border-radius:10px;
+	background-color:teal;
+}
+#back-to-top:hover{
+	cursor: none;
+	color: transparent;
+	background-color:transparent;
+}
+#back-to-top.scrolled:hover{
+	cursor: pointer;
+	color:white;
+	background-color:#555;
+}
+
+#back-to-top i{
+	color:white;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+	height:100%;
+}
+.carousel-inner{
+	height: 100%;
+}
+.bd-placeholder-img{
+	width:100%;
+	height:100%;
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-moz-background-size: cover;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+/*----------------------------------------*/
+/*----------icons styling----------*/
+/*----------------------------------------*/
+ .fas{
+	color:#4c9e9e;	
+	font-size:40px;
+	margin:auto;
+	text-align:center;  
+} 
+ .fab{
+	color:white;	
+	font-size:25px;
+	margin:auto;
+	margin-bottom:20px;
+	text-align:center;  
+} 
+.fa-bars{
+	font-size:30px;
+}
+.fa-times{
+	font-size: 30px;
+	color: rgb(218, 122, 119);
+}
+/*----------------------------------------*/
+/*----------homepage styling----------*/
+/*----------------------------------------*/
+.line-div{
+	background-color: rgb(26, 158, 158);
+	height:2em;
+}
+#about{
+	padding-top: 60px;
+}
+#about h2{
+	color:rgb(26, 158, 158);
+	font-weight: 400;
+}
+#about-h3-1{
+	color:rgb(26, 158, 158);
+}
+#about-img{
+	width:100%;
+	height:400px;
+}
+#about li{
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+#about i{
+	color:rgb(26, 158, 158);
+	font-size:1.1rem;
+	margin-right:10px;
+}
+#about-second-row{
+	margin-top: 30px;
+}
+#about-mission-img{
+	width:100%;
+	height:300px;
+}
+#about-icons{
+	width:70px;
+	height:75px;
+}
+.main{
+	position: relative;
+}
+.overlay{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 1;
+	margin-bottom: -40px;
+}
+#about-h3{
+	color: #777777;
+	margin-top:40px;
+}
+
+/*----------------------------------------*/
+/*----------services styling----------*/
+/*----------------------------------------*/
+#services{
+	padding:10px;
+	padding-top: 60px;
+	border-radius: 10px;
+	background-color: rgb(244, 246, 247);
+}
+#services h2{
+	color:rgb(26, 158, 158);
+	font-weight: 400;
+}
+#services h3{
+	color: #333;
+	font-weight: 300;
+}
+#services-box{
+	padding: 10px;
+	margin-top:10px;
+	background-color: white;
+}
+
+/*----------------------------------------*/
+/*----------portfolio styling----------*/
+/*----------------------------------------*/
+#portfolio{
+	padding-top: 60px;
+}
+#portfolio h2{
+	color:rgb(26, 158, 158);
+	font-weight: 400;
+}
+#portfolio h3{
+	color: #333;
+	font-weight: 300;
+}
+#portfolio-btn{
+	color: white;
+	font-size: 1.2em;
+	border-style:solid;
+	border-color: rgb(26, 158, 158);
+	background-color: rgb(26, 158, 158);
+}
+#portfolio-btn:hover{
+	color: rgb(26, 158, 158);
+	border-color: rgb(26, 158, 158);
+	background-color: white;
+}
+#portfolio-box{
+	width:100%;
+	margin-top:20px;
+	background:linear-gradient(145deg, #e6e6e6, #ffffff);
+	box-shadow: 5px 5px 7px #696969,
+				-5px -5px 7px #ffffff;
+}
+#portfolio-box:hover{
+	transform: scale(1.1);
+}
+#portfolio-img{
+	width:100%;
+	height:250px;
+}
+#portfolio h6{
+	font-size: 1rem;
+	font-weight: 400;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+#portfolio i{
+	font-size: 1.2em;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+/*----------------------------------------*/
+/*----------contact styling----------*/
+/*----------------------------------------*/
+#contact{
+	margin-top: 10px;
+	padding: 10px;
+	padding-top: 60px;
+	background-color: rgb(244, 246, 247);
+}
+#contact h2{
+	color:rgb(26, 158, 158);
+	font-weight: 400;
+}
+#info-box {
+	color: #444444;
+	text-align: center;
+	box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+	padding: 20px 0 30px 0;
+}
+#contact li{
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+#contact i{
+	color:teal !important;
+	font-size:1.3rem !important;
+}
+#contact h4 {
+    font-size: 20px;
+    color: #777777;
+    font-weight: 700;
+    margin: 10px 0;
+}
+#info-box p {
+    padding: 0;
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+#address-box{
+	width:100%;
+	margin:auto;
+	padding:10px;
+	text-align:center;
+	border-radius:10px;
+	background-color:white;
+}
+#email-box{
+	width:100%;
+	margin:auto;
+	padding:10px;
+	margin-top: 5px;
+	text-align:center;
+	border-radius:10px;
+	background-color:white;
+}
+#phone-box{
+	width:100%;
+	margin:auto;
+	padding: 10px;
+	margin-top: 5px;
+	text-align:center;
+	border-radius:10px;
+	background-color:white;
+}
+#message-box{
+	border-radius:14px;
+    width:100%;
+	margin:auto;
+	text-align:center;
+    border-style:double;
+    border-color: #fff;
+	border-style:hidden;
+	background-color:white;
+}
+#contact h3 {
+    font-size: 2rem;
+    color:rgb(26, 158, 158);
+    font-weight: 700;
+    margin: 10px 0;
+}
+#message-box-name{
+	width:90%;
+	height:40px;
+	padding:10px;
+	margin-bottom:10px;
+	border-radius:5px;
+	border-color:lightgrey;
+	border-style:solid;
+	background-color:white;
+} 
+#message-box-email{
+	width:90%;
+	height:40px;
+	padding:10px;
+	margin-bottom:10px;
+	border-radius:5px;
+	border-color:lightgrey;
+	border-style:solid;
+	background-color:white;
+}
+#message-box-subject{
+	width:90%;
+	height:40px;
+	padding:10px;
+	margin-bottom:10px;
+	border-radius:5px;
+	border-style:solid;
+	border-color:lightgrey;
+	background-color:white;
+} 
+#message-box-textarea{
+	width:90%;
+	height:120px;
+	padding:10px;
+	border-radius:5px;
+	border-style:solid;
+	border-color:lightgrey;
+	background-color:white;
+}
+#message-box-button{
+	border-radius:30px;
+	height:40px;
+	width:30%;
+	color:white;
+	margin-bottom:20px;
+	border: 2px solid rgb(26, 158, 158);
+	background-color: rgb(26, 158, 158);
+}
+#message-box-button:hover{
+	color:rgb(26, 158, 158);
+	border-color:rgb(26, 158, 158);
+	background: rgba(255, 255, 255, 0.1);
+}
+
+/*----------------------------------------*/
+/*----------pricing.html styling----------*/
+/*----------------------------------------*/
+#pricing{
+	padding:10px;
+	padding-top: 60px;
+	border-radius: 10px;
+	background-color: rgb(244, 246, 247);
+}
+#pricing h2{
+	color:rgb(66, 64, 64);
+	font-size: 2.5em;
+	font-weight: 400;
+}
+#pricing-box-1{
+	color:white;
+	text-align: center;
+	border-radius: 10px;
+	margin-top: 30px;
+	padding-top:20px;
+	padding-bottom: 20px;
+	background-color: rgb(26, 158, 158);
+	box-shadow: 16px 16px 10px #acacac,
+				-16px -16px 10px #ffffff;
+}
+#pricing-box-2{
+	color:white;
+	text-align: center;
+	border-radius: 10px;
+	margin-top: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color:#f74e1f;
+	box-shadow: 16px 16px 10px #acacac,
+				-16px -16px 10px #ffffff;
+}
+#pricing-box-3{
+	color:white;
+	text-align: center;
+	border-radius: 10px;
+	margin-top: 30px;
+	padding-top:20px;
+	padding-bottom: 20px;
+	background-color: rgb(26, 158, 158);
+	box-shadow: 16px 16px 10px #acacac,
+				-16px -16px 10px #ffffff;
+}
+#pricing-box-4{
+	color:white;
+	text-align: center;
+	border-radius: 10px;
+	margin-top: 30px;
+	padding-top:20px;
+	padding-bottom: 20px;
+	background-color: #f74e1f;
+	box-shadow: 16px 16px 10px #acacac,
+				-16px -16px 10px #ffffff;
+}
+#pricing-box-5{
+	color:white;
+	text-align: center;
+	border-radius: 10px;
+	margin-top: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: rgb(26, 158, 158);
+	box-shadow: 16px 16px 10px #acacac,
+				-16px -16px 10px #ffffff;
+}
+#pricing-box-6{
+	color:white;
+	text-align: center;
+	border-radius: 10px;
+	margin-top: 30px;
+	padding-top:20px;
+	padding-bottom: 20px;
+	background-color: #f74e1f;
+	box-shadow: 16px 16px 10px #acacac,
+				-16px -16px 10px #ffffff;
+}
+#graphic-pricing-box{
+	padding:10px;
+	margin-top: 30px;
+	color:white;
+	background:rgb(27, 26, 26);
+	box-shadow: 5px 5px 7px #696969,
+				-5px -5px 7px #ffffff;
+}
+#pls-note-p{
+	font-size: 1.2em;
+	margin-top:10px;
+}
+
+/*----------------------------------------*/
+/*----------footer styling----------*/
+/*----------------------------------------*/
+.footer{
+	width:100%;
+	margin:auto;
+	color:white;
+	margin-top:10px;
+	background:#040b14;
+	padding-left:20px;
+}
+.footer h4{
+	color:white;
+}
+.footer a{
+	color:lightgrey;
+}
+.fa-facebook{
+	border-color: #fff;
+	color:teal;
+	width:30px;
+	height:30px;
+	border-radius:10px;
+} 
+.fa-twitter{
+	border-color: #fff;
+	color:black;
+	width:30px;
+	border-radius:10px;
+	height:30px;
+} 
+.fa-instagram{
+	border-color: #fff;
+	color:black;
+	width:30px;
+	border-radius:10px;
+	height:30px;
+} 
+.fa-whatsapp{
+	border-color: #fff;
+	color:black;
+	width:30px;
+	border-radius:10px;
+	height:30px;
+} 
+.fa-telegram{
+	border-color: #fff;
+	color:black;
+	width:30px;
+	border-radius:10px;
+	height:30px;
+}
+.fa-facebook:hover{
+	border-color: #fff;
+	color:white;
+	text-decoration:none;  
+}
+.fa-telegram:hover{
+	border-color: #fff;
+	color:white;
+	text-decoration:none;  
+}
+.fa-instagram:hover{
+	border-color: #fff;
+	color:white;
+	text-decoration:none;  
+}
+.fa-whatsapp:hover{
+	border-color: #fff;
+	color:white;
+	text-decoration:none;  
+}
+.fa-twitter:hover{
+	border-color: #fff;
+	color:white;
+	text-decoration:none;  
+}
+#copyright{
+	width:100%;
+	padding-top:20px;
+	padding-bottom:20px;
+	color:white;
+	background:black;
+}
+
+#post-detail-img{
+	width:100px;
+	height:90px;
+}
+#blog-list-img{
+	width:100px;
+	height:90px;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+	}
+}
+@media (max-width: 600px) {
+	.navbar-collapse{
+		position:fixed;
+		top: 50px;
+		left: 0;
+		margin-top: 5px;
+		padding-top: 20px;
+		padding-left: 15px;
+		padding-right: 15px;
+		text-align: center;
+		padding-bottom: 15px;
+		width: 85%;
+		height: 100%;
+		border-top-style: solid;
+		border-right-style: solid;
+		border-color: #1a9e9e;
+		background-color: white;
+	}
+	.navbar-collapse.collapsing{
+		left: -75%;
+		transition: height 0s ease;
+	}
+	.navbar-collapse.show{
+		left: 0;
+		transition: left 300ms linear;
+	}
+	.navbar-toggler.collapsed ~ .navbar-collapse{
+		transition: left 300ms linear;
+	}
+	.navbar-custom{
+		background-color: white;
+	}
+	.navbar-brand{
+		color: rgb(26, 158, 158);
+	}
+	.nav-link{
+		color: rgb(43, 42, 42);
+	}
+	.nav-link:hover{
+		color:rgb(43, 42, 42);
+	}
+	
+}
