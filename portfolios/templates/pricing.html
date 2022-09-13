@@ -8,8 +8,12 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/carousel/">
 	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
-	<script src="script.js"></script>
-    <title>NAD TECH</title>
+  <script src="{% static 'js/script.js' %}"></script>
+  <title>NAD TECH</title>
+
+  <!---animation links---->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
  </head>
 
@@ -39,10 +43,12 @@
 
 <div class="container">
   <div id="pricing">
-    <center><h2>Pricing</h2></center>
-
+    <center>
+      <h2>Pricing</h2>
+      <p>Below are the prices of some of our services we offer to our clients.</p>
+    </center>
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-lg-4" data-aos="fade-up" data-aos-duration="1500">
         <div id="pricing-box-1">
           <h3>Personal Website</h3>
           <h3><b>N30,000</b></h3>
@@ -54,7 +60,7 @@
           <p>Contact Information</p>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-lg-4" data-aos="fade-up" data-aos-duration="1500">
         <div id="pricing-box-2">
           <h3>Portfolio Website</h3>
           <h3><b>N50,000</b></h3>
@@ -66,7 +72,7 @@
           <p>Contact information</p>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-lg-4" data-aos="fade-up" data-aos-duration="1500">
         <div id="pricing-box-3">
           <h3>Business Website</h3>
           <h3><b>N70,000</b></h3>
@@ -81,7 +87,7 @@
     </div>
 
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-lg-4" data-aos="fade-up" data-aos-duration="1500">
         <div id="pricing-box-4">
           <h3>Newspaper/Blog website</h3>
           <h3><b>N90,000</b></h3>
@@ -94,7 +100,7 @@
           <p>Registration site</p>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-lg-4" data-aos="fade-up" data-aos-duration="1500">
         <div id="pricing-box-5">
           <h3>Educational website</h3>
           <h3><b>N100,000</b></h3>
@@ -107,7 +113,7 @@
           <p>Help center access</p>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-lg-4" data-aos="fade-up" data-aos-duration="1500">
         <div id="pricing-box-6">
           <h3>E-commerce website</h3>
           <h3><b>N350,000</b></h3>
@@ -123,7 +129,7 @@
       </div>
     </div>
 
-    <div id="graphic-pricing-box">
+    <div id="graphic-pricing-box" data-aos="fade-up" data-aos-duration="1500">
       <center><h3>Graphic Art works</h3></center>
       <div class="row">
         <div class="col-md-4">
@@ -141,7 +147,7 @@
       </div>
     </div>
 
-    <p id="pls-note-p">Please Do Note That All Prices Are Slightly Negociateable. For more Inquiries, Do contact us via phone call or connect
+    <p id="pls-note-p" data-aos="fade-up" data-aos-duration="1500">Please Do Note That All Prices Are Slightly Negociateable to improve our relationship with our clients. For more Inquiries, Do contact us via phone call or connect
        with us through our social media handle.</p>
   </div>
 
@@ -175,6 +181,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 
     <script>
+    AOS.init()
     $(window).scroll(function(){
       $('.navbar').toggleClass('scrolled', $(this).scrollTop() > 200);
       $('.nav-link').toggleClass('scrolled', $(this).scrollTop() > 200);

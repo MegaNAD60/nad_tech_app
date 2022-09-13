@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'blog.apps.BlogConfig',
 ]
 
+TIME_ZONE = 'West Central Africa'
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',

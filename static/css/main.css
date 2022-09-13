@@ -126,7 +126,7 @@
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-  bottom: 3rem;
+  bottom: 9rem;
   z-index: 10;
 }
 
@@ -279,9 +279,6 @@
 	box-shadow: 5px 5px 7px #696969,
 				-5px -5px 7px #ffffff;
 }
-#portfolio-box:hover{
-	transform: scale(1.1);
-}
 #portfolio-img{
 	width:100%;
 	height:250px;
@@ -373,64 +370,11 @@
 	border-style:hidden;
 	background-color:white;
 }
-#contact h3 {
+#contact h4 {
     font-size: 2rem;
-    color:rgb(26, 158, 158);
+    color:rgb(45, 49, 49);
     font-weight: 700;
     margin: 10px 0;
-}
-#message-box-name{
-	width:90%;
-	height:40px;
-	padding:10px;
-	margin-bottom:10px;
-	border-radius:5px;
-	border-color:lightgrey;
-	border-style:solid;
-	background-color:white;
-} 
-#message-box-email{
-	width:90%;
-	height:40px;
-	padding:10px;
-	margin-bottom:10px;
-	border-radius:5px;
-	border-color:lightgrey;
-	border-style:solid;
-	background-color:white;
-}
-#message-box-subject{
-	width:90%;
-	height:40px;
-	padding:10px;
-	margin-bottom:10px;
-	border-radius:5px;
-	border-style:solid;
-	border-color:lightgrey;
-	background-color:white;
-} 
-#message-box-textarea{
-	width:90%;
-	height:120px;
-	padding:10px;
-	border-radius:5px;
-	border-style:solid;
-	border-color:lightgrey;
-	background-color:white;
-}
-#message-box-button{
-	border-radius:30px;
-	height:40px;
-	width:30%;
-	color:white;
-	margin-bottom:20px;
-	border: 2px solid rgb(26, 158, 158);
-	background-color: rgb(26, 158, 158);
-}
-#message-box-button:hover{
-	color:rgb(26, 158, 158);
-	border-color:rgb(26, 158, 158);
-	background: rgba(255, 255, 255, 0.1);
 }
 
 /*----------------------------------------*/
@@ -545,7 +489,7 @@
 }
 .fa-facebook{
 	border-color: #fff;
-	color:teal;
+	color:black;
 	width:30px;
 	height:30px;
 	border-radius:10px;
@@ -579,29 +523,24 @@
 	height:30px;
 }
 .fa-facebook:hover{
-	border-color: #fff;
-	color:white;
 	text-decoration:none;  
+	transition:scale(1.1);
 }
 .fa-telegram:hover{
-	border-color: #fff;
-	color:white;
 	text-decoration:none;  
+	transition:scale(1.1);
 }
 .fa-instagram:hover{
-	border-color: #fff;
-	color:white;
 	text-decoration:none;  
+	transition:scale(1.1);
 }
 .fa-whatsapp:hover{
-	border-color: #fff;
-	color:white;
 	text-decoration:none;  
+	transition:scale(1.1);
 }
 .fa-twitter:hover{
-	border-color: #fff;
-	color:white;
 	text-decoration:none;  
+	transition:scale(1.1);
 }
 #copyright{
 	width:100%;

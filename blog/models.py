@@ -3,7 +3,7 @@ from django.urls import reverse
 
 class Post(models.Model):
     title = models.CharField(max_length=250)
-    image = models.ImageField(blank=True)
+    image = models.ImageField(null=True, blank=True)
     author = models.ForeignKey(
         'auth.User', 
         on_delete=models.CASCADE,
