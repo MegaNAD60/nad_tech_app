@@ -20,8 +20,8 @@
       object-fit: cover;
     }
     .list-box{
-      margin-top: 10px;
-      margin-bottom: 10px;
+      margin-top: 20px;
+      margin-bottom: 20px;
       padding: 10px;
       margin: auto;
     	background:linear-gradient(145deg, #e6e6e6, #ffffff);
@@ -66,7 +66,7 @@
         <div class="post-entry">
             <img class="rounded featured-image-list" id="blog-list-img" src="{{ post.image.url }}" >
             <h2>{{ post.title }}</h2>
-            <p>{{ post.body|slice:"100"|safe }}<br/><br/><a class="btn btn-primary" href="{% url 'post_detail' post.pk %}">Read more...</a></p>
+            <p>{{ post.body|slice:"150"|safe }}<br/><br/><a class="btn btn-primary" href="{% url 'post_detail' post.pk %}">Read more...</a></p>
         </div>
       </div>
       </div>

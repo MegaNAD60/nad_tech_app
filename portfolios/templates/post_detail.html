@@ -58,7 +58,7 @@
           {% if post.image %}
             <img id="post-detail-img" src="{{ post.image.url }}">
           {% endif %}
-          <p>By {{ post.author }}</p>
+          <p>By {{ post.author }} | {{ post.date }}</p>
           <p>{{ post.body|safe }}</p>
         </div>
      </div>     
